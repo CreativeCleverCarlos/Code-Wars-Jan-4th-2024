@@ -23,3 +23,17 @@ function getDivisorsCnt(n){
 }
 
 console.log(getDivisorsCnt(2))
+
+/**
+ Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+**/
+
+
+// example Input: 42145 Output: 54421
+function descendingOrder(n){
+    let toAString = n.toString()
+    let assorted = toAString.split("").sort().reverse().join("")
+    return +assorted
+  }
+
+  console.log(descendingOrder(41982473))
